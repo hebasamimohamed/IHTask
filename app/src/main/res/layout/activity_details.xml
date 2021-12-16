@@ -2,7 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_5sdp"
+    android:paddingEnd="@dimen/_5sdp">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/back"
@@ -15,13 +17,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/auther"
+        android:id="@+id/author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_25sdp"
         android:ellipsize="end"
         android:maxLines="1"
-        android:text="jkbfasdjbvdajv "
         android:textColor="@color/black"
         android:textSize="@dimen/_14ssp"
         android:textStyle="bold"
@@ -44,11 +45,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
-        android:text="News title that will appear here fsfbgfbaeb"
         android:textColor="@color/black"
         android:textSize="@dimen/_14ssp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/newsImg"
         app:layout_constraintStart_toStartOf="@+id/newsImg"
         app:layout_constraintTop_toBottomOf="@+id/newsImg" />
 
@@ -57,8 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="kjudakhvkhcvsd"
-        android:textColor="@color/black"
+        android:textColor="@color/colorAccent"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintStart_toStartOf="@+id/newsTitle"
         app:layout_constraintTop_toBottomOf="@+id/newsTitle" />
@@ -67,7 +65,6 @@
         android:id="@+id/duration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="jhvacdjhvjahs"
         android:textColor="@color/black"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintEnd_toEndOf="@+id/newsTitle"

@@ -13,6 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
     <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
         <!-- Gets rid of the search icon -->
         <!--        <item name="searchIcon">@null</item>-->
@@ -29,4 +30,13 @@
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textColorSecondary">@color/colorAccent</item>
     </style>
+
+    <style name="Theme.IHTask.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.IHTask.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.IHTask.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

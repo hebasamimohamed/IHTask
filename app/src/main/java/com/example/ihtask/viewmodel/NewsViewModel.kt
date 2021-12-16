@@ -59,7 +59,6 @@ class NewsViewModel(
             }
         }
     }
-
     private fun handlePicsResponse(response: Response<NewsResponse>): Resource<NewsResponse> {
         if (response.isSuccessful) {
             response.body()?.let { resultResponse ->

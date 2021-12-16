@@ -10,8 +10,10 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card"
@@ -27,36 +29,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <androidx.appcompat.widget.AppCompatImageView
+                <com.makeramen.roundedimageview.RoundedImageView
                     android:id="@+id/newsImg"
-                    android:layout_width="@dimen/_120sdp"
-                    android:layout_height="@dimen/_120sdp"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:scaleType="fitXY"
+                    app:imageThumb="@{news.urlToImage}"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="14dip" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/newsTitle"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/_195sdp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:text="@{news.title}"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
+                    android:textSize="@dimen/_12ssp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@+id/newsImg"
                     app:layout_constraintTop_toTopOf="@+id/newsImg" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/newsDescription"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/_195sdp"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
-                    android:maxLines="1"
+                    android:maxLines="2"
                     android:text="@{news.description}"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_13ssp"
-                    android:textStyle="bold"
+                    android:textSize="@dimen/_11ssp"
                     app:layout_constraintStart_toStartOf="@+id/newsTitle"
                     app:layout_constraintTop_toBottomOf="@+id/newsTitle" />
 
@@ -72,6 +77,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@{news.source.name}"
+                    android:visibility="invisible"
                     app:layout_constraintStart_toEndOf="@+id/duration"
                     app:layout_constraintTop_toTopOf="@+id/duration" />
 

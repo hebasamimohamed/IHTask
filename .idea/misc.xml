@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/IHTask/app/src/main/res/drawable/ic_background.xml" value="0.20833333333333334" />
+        <entry key="..\:/IHTask/app/src/main/res/layout/activity_details.xml" value="0.1213768115942029" />
         <entry key="..\:/IHTask/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/IHTask/app/src/main/res/layout/content_details.xml" value="0.1213768115942029" />
+        <entry key="..\:/IHTask/app/src/main/res/layout/details_news.xml" value="0.1213768115942029" />
+        <entry key="..\:/IHTask/app/src/main/res/layout/fragment_second.xml" value="0.1213768115942029" />
+        <entry key="..\:/IHTask/app/src/main/res/layout/news_cell.xml" value="0.12771739130434784" />
+        <entry key="..\:/IHTask/app/src/main/res/layout/search_layout.xml" value="0.12771739130434784" />
         <entry key="..\:/Users/ascom/AndroidStudioProjects/IHTask/app/src/main/res/drawable/background_search.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/ascom/AndroidStudioProjects/IHTask/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/ascom/AndroidStudioProjects/IHTask/app/src/main/res/layout/activity_main.xml" value="0.20833333333333334" />

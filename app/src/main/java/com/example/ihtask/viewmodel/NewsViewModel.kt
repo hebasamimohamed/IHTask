@@ -8,6 +8,7 @@ import com.example.ihtask.R
 import com.example.ihtask.app.MyApplication
 import com.example.ihtask.models.NewsResponse
 import com.example.ihtask.repo.AppRepository
+import com.example.ihtask.utils.Constants
 import com.example.ihtask.utils.Resource
 import com.example.ihtask.utils.Utils.hasInternetConnection
 import kotlinx.coroutines.launch
@@ -34,7 +35,7 @@ class NewsViewModel(
         try {
             if (hasInternetConnection(getApplication<MyApplication>())) {
                 val response = appRepository.getLiveNews(
-                    "apple", "2021-11-16", "publishedAt", ""
+                    Constants.VERISION, Constants.ARTICLE_DATE, Constants.SORT_BY
                 )
                 articlesDATA.postValue(handlePicsResponse(response))
             } else {

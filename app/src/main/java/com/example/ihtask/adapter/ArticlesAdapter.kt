@@ -1,6 +1,5 @@
 package com.example.ihtask.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -67,8 +66,8 @@ class ArticlesAdapter(
     override fun getFilter(): Filter {
         return object : Filter() {
             override fun performFiltering(constraint: CharSequence): FilterResults {
-                val charString = constraint.toString() ?: ""
-                if (charString.isEmpty()) articlesFiltered = articles else {
+                val charString = constraint.toString()
+                articlesFiltered = if (charString.isEmpty()) articles else {
                     val filteredList: MutableList<Articles> = mutableListOf()
                     articles
                         ?.filter {
@@ -76,9 +75,8 @@ class ArticlesAdapter(
 
                         }
                         ?.forEach { filteredList.add(it) }
-                    articlesFiltered = filteredList
+                    filteredList
 
-                    Log.e("performFiltering: t1: ", filteredList.size.toString())
 
                 }
                 return FilterResults().apply { values = articlesFiltered }
